@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating decorations layer (shared across whole page) -->
+  <div class="floaters" id="floaters"></div>
+
+  <audio id="birthday-song" preload="metadata" src="birthday-song.mp3"></audio>
+  <button class="music-control" id="music-control" type="button" aria-label="Play birthday song" aria-pressed="false" disabled>
+    <span class="music-icon" aria-hidden="true">♪</span>
+    <span id="music-label">Play song</span>
+  </button>
+
+  <!-- SECTION 1: HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </h1>
+      <p class="hero-subtitle">Today is all about celebrating you and the joy you bring </p>
+      <div class="scroll-hint">
+        <span></span>
+        <p>scroll down</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: MEMORIES PREVIEW (3 cards) -->
+  <section class="memories" id="memories">
+    <div class="section-heading">
+      <p class="eyebrow">A Little Celebration</p>
+      <h2>Our Beautiful Memories</h2>
+    </div>
+
+    <div class="memory-cards">
+      <div class="memory-card">
+        <video src="photo1.mp4" autoplay muted loop playsinline preload="auto" aria-label="Memory one"></video>
+        <div class="memory-overlay">
+          <p>Every moment with you feels like magic</p>
+          <span class="heart-icon">♡</span>
+        </div>
+      </div>
+      <div class="memory-card featured">
+        <video src="photo2.mp4" autoplay muted loop playsinline preload="auto" aria-label="Memory two"></video>
+        <div class="memory-overlay">
+          <p>Your smile lights up my world</p>
+          <span class="heart-icon">♡</span>
+        </div>
+      </div>
+      <div class="memory-card">
+        <video src="photo3.mp4" autoplay muted loop playsinline preload="auto" aria-label="Memory three"></video>
+        <div class="memory-overlay">
+          <p>Forever grateful for you</p>
+          <span class="heart-icon">♡</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PHOTO GRID -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="photo4.jpeg" alt="Memory four" onerror="this.src='https://picsum.photos/seed/g1/500/500?grayscale'"></div>
+      <div class="gallery-item"><img src="photo5.jpeg" alt="Memory five" onerror="this.src='https://picsum.photos/seed/g2/500/500?grayscale'"></div>
+      <div class="gallery-item"><img src="photo6.jpg" alt="Memory six" onerror="this.src='https://picsum.photos/seed/g3/500/500?grayscale'"></div>
+      <div class="gallery-item"><img src="photo7.jpeg" alt="Memory seven" onerror="this.src='https://picsum.photos/seed/g4/500/500?grayscale'"></div>
+      <div class="gallery-item"><img src="photo8.jpg" alt="Memory eight" onerror="this.src='https://picsum.photos/seed/g5/500/500?grayscale'"></div>
+      <div class="gallery-item"><img src="photo9.jpeg" alt="Memory nine" onerror="this.src='https://picsum.photos/seed/g6/500/500?grayscale'"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: SPECIAL MESSAGE -->
+  <section class="message-section" id="message">
+    <div class="message-card">
+      <h2>A Special Message for You</h2>
+      <p>
+        On this special day, I want you to know how grateful I am to have you in my life.
+        Your laughter fills my days with joy, your love gives me strength, and your presence
+        makes everything better. You are not just my sis, you are my best friend,
+        my partner in crime, and a part of my life.
+      </p>
+      <p>
+        Today, we celebrate you — your kindness, your beauty, your amazing spirit, and all
+        the wonderful things that make you uniquely you. I hope this new year of your life
+        is filled with as much happiness as you give everyone around you.
+      </p>
+      <p class="signature">Happy Birthday didi. Here's to many more memories together. 💕</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
